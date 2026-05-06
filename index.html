@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordMaster - İngilizce Ezber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <script type="module" crossorigin src="./assets/index-JAJDLT0T.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CODPPqiy.css">
+  <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
+  <body>
+    <div id="app">
+      <!-- Splash Screen -->
+      <div id="splash" class="screen">
+        <div class="logo-container">
+          <div class="logo-icon">W</div>
+          <h1>WordMaster</h1>
+          <p>Kelimelerin Gücünü Keşfet</p>
+        </div>
+        <button id="start-btn" class="glass-btn">Başla</button>
+      </div>
+
+      <!-- Game Screen -->
+      <div id="game" class="screen hidden">
+        <header>
+          <div class="stats">
+            <div class="stat-item">
+              <span class="label">Skor</span>
+              <span id="score" class="value">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="label">Seri</span>
+              <span id="streak" class="value">0 🔥</span>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <div id="word-card" class="glass-card">
+            <div class="card-header">
+              <button id="speak-btn" class="icon-btn" title="Seslendir">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.85 14,18.71V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16.02C15.5,15.29 16.5,13.77 16.5,12M3,9V15H7L12,20V4L7,9H3Z" /></svg>
+              </button>
+            </div>
+            <h2 id="target-word">Hello</h2>
+            <p id="word-desc" class="hidden">An expression of greeting</p>
+          </div>
+
+          <div id="options" class="options-grid">
+            <!-- Options will be generated here -->
+          </div>
+        </main>
+
+        <footer>
+          <div id="feedback" class="feedback-msg"></div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
